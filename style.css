@@ -1,0 +1,234 @@
+@font-face {
+  font-family: 'Ping';
+  src: url(/Ping.Font.Tlwen.com/PingAR+LT-Bold.otf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Ping', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  height: 50px;
+}
+
+.a-header {
+  display: flex;
+  height: 50px;
+  margin-top: 10px;
+  gap: 90px;
+}
+
+.a-header a {
+  color: #004030;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+.main-image {
+  display: flex;
+  width: 100vw;       
+  min-width: 100%;
+  height: 700px;
+}
+
+.main-image img {
+  flex-shrink: 0;   
+  width: 100%;        
+  height: 100%;
+  object-fit: cover;  
+}
+
+.intro-to-iraq {
+  display: flex;
+  width: 100%;      
+  min-width: 100%;
+  height: 1000px;
+  background-color: #004030;
+  align-items: flex-start;
+}
+
+.intro-to-iraq img {
+  display: inline-block;
+  width: 450px;
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 75px;
+  flex-shrink: 0;
+}
+
+.intro-to-iraq .p-iraq {
+  display: inline-block;
+  margin-top: 150px;
+  margin-left: 100px;
+  height: 77px;
+  color: #DCA97B;
+  flex-shrink: 0;
+}
+
+.intro-to-iraq .p-iraq h2 {
+  font-weight: 800;
+  font-style: Heavy;
+  font-size: 48px;
+  color: #DCA97B;
+  text-align: left;
+}
+
+.intro-to-iraq .p-iraq p {
+  width: 740px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+h2{
+  text-align: center;
+  height: 77px;
+  font-weight: 800;
+  font-size: 48px;
+  color: #004030;
+}
+hr{
+  width: 1300px;
+  height: 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: none;
+  background-color: #DCA97B;
+  border-radius: 25px;
+}
+.View-more{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  width: 128px;
+  height: 40px;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  justify-self: center;
+  border-radius: 50px;
+  border: none;
+  background-color: #004030;
+  font-family: 'Ping', sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+}
+.place-section .place-image, .food-section .Dishes-image{
+  display: flex;
+  gap: 10px;
+  width: 1330px;
+  margin-left: 55px;
+}
+.place-section .place-image img{
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  border: 2.5px solid #DCA97B;
+  padding: 2.5px;
+}
+.place-image {
+  display: flex;
+  gap: 20px;
+}
+
+.place-image a, .Figures-section a, .food-section a {
+  display: flex;
+  flex-direction: column; 
+  text-decoration: none;
+  color: #004030;
+  align-items: center;
+}
+
+.place-image img {
+  width: 250px;
+  height: 350px;
+  border-radius: 25px;
+  border: 2.5px solid #DCA97B;
+}
+
+.place-image p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Figures-section .Figures{
+  display: flex;
+  gap: 25px;
+  width: 1330px;
+  margin-left: 75px;
+}
+.Figures-section .Figures img{
+  width: 183px;
+  height: 190px;
+  border-radius: 50%;
+  border: 2.5px solid #DCA97B;
+  padding: 2.5px;
+}
+
+.food-section .Dishes-image img{
+  width: 250px;
+  height: 298px;
+  border-radius: 25px;
+  border: 2.5px solid #DCA97B;
+  padding: 2.5px;
+}
+footer {
+  background-color: #004030;
+  width: 1440px; 
+  height: 200px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  line-height: 0;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-links a {
+  display: flex;        
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  color: #DCA97B;  
+  padding-left: 55px;        
+}
+.footer-links a i {
+  font-size: 30px;     
+  color: #DCA97B;
+  vertical-align: middle; 
+  position: relative;
+  top: -3px;
+}
+.top-links{
+  padding-top: 60px;
+}
+.bottom-links{
+  padding-bottom: 40px;
+}
+.top-links,
+.bottom-links {
+  display: flex;
+  gap: 550px;
+}
