@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Ping';
+  src: url(/Ping.Font.Tlwen.com/PingAR+LT-Bold.otf);
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Ping', sans-serif;
+}
+
+/* ====== الهيدر ====== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 50px;
+}
+
+.left .logo {
+  height: 30px;
+}
+
+nav ul {
+  position: relative;
+  white-space: nowrap;
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  width: 10%;
+  padding: 0 60px;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  position: relative;
+  left: -3px;
+  transition: color 0.3s ease;
+}
+
+.right select#language-select {
+  padding: 3px 15px;
+  border-radius: 30px;
+  font-family: "Ping", sans-serif;
+  border: 2px solid;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ====== الفوتر ====== */
+footer {
+  background-color: #004030;
+  width: 1440px; 
+  height: 210px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  line-height: 0;
+  margin-top: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer-links a {
+  position: relative;
+  display: flex;        
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  color: #DCA97B;  
+  padding-left: 55px;        
+}
+.footer-links a i {
+  font-size: 23px;
+  color: #DCA97B;
+  position: relative;
+  top: -3px;
+}
+.footer-links a:hover {
+  position: relative;
+  left: -3px;
+  color: #ecdaca;
+}
+.footer-links a:hover i {
+  color: #ecdaca;
+}
+
+.top-links{
+  padding-top: 20px;
+}
+.bottom-links{
+  padding-bottom: 40px;
+}
+.top-links,
+.bottom-links {
+  display: flex;
+  gap: 500px;
+}
+
+/* ====== الميديا ====== */
+
+/* للكومبيوتر */
+@media (min-width: 1025px) {
+  footer {
+    width: 1440px; 
+  }
+  nav ul li {
+    padding: 0 60px;
+  }
+}
+
+/* للتابلت */
+@media (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+
+  nav ul li {
+    padding: 0 30px;
+  }
+
+  .top-links,
+  .bottom-links {
+    gap: 200px;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .footer-links {
+    gap: 50px;
+  }
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  nav li a {
+    font-size: 18px;
+  }
+
+  .right select#language-select {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+
+  footer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    gap: 30px;
+  }
+
+  .top-links,
+  .bottom-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+    padding-left: 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Ping';
+  src: url(/Ping.Font.Tlwen.com/PingAR+LT-Bold.otf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Ping', sans-serif;
+  overflow-x: hidden;
+}
+
+.main {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.main-image {
+  display: flex;
+  width: 100vw;
+  min-width: 100%;
+  height: 700px;
+}
+
+.main-image img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main .T-iraq {
+  position: absolute;
+  width: 40vw;
+  max-width: 800px;
+  height: auto;
+  left: 42%;
+  top: 39.5%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #004030;
+  font-size: 2.2vw;
+  font-weight: 800;
+}
+
+.main .iraq-map {
+  position: absolute;
+  width: 20vw;
+  max-width: 200px;
+  height: auto;
+  left: 50%;
+  top: 38%;
+  transform: translateX(-50%);
+}
+
+.intro-to-iraq {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 100%;
+  background-color: #004030;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  gap: 40px;
+}
+
+.intro-to-iraq img {
+  width: 450px;
+  max-width: 90%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.intro-to-iraq .p-iraq {
+  color: #DCA97B;
+  max-width: 740px;
+}
+
+.intro-to-iraq .p-iraq h2 {
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.intro-to-iraq .p-iraq p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.place-section .place-image,
+.Figures-section .Figures,
+.food-section .Dishes-image {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 30px;
+  scroll-behavior: smooth;
+}
+
+.Figures-section .Figures{
+  margin-left: 50px;
+}
+
+.place-section .place-image img,
+.Figures-section .Figures img,
+.food-section .Dishes-image img {
+  flex: 0 0 auto;
+  border-radius: 25px;
+  border: 3px solid #DCA97B;
+  padding: 2.5px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.place-section .place-image img { width: 250px; height: 350px; }
+.Figures-section .Figures img { width: 183px; height: 190px; border-radius: 50%; }
+.food-section .Dishes-image img { width: 250px; height: 298px; }
+
+.place-section img:hover,
+.Figures-section img:hover,
+.food-section img:hover {
+  border-color: #004030;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+}
+
+section h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 46px;
+  color: #004030;
+  margin-top: 40px;
+}
+h2{
+  font-weight: 800;
+  font-size: 76px;
+  color: #DCA97B;
+  margin-top: 150px;
+}
+
+hr {
+  width: 80%;
+  height: 3px;
+  margin: 30px auto;
+  border: none;
+  background-color: #DCA97B;
+  border-radius: 25px;
+}
+section a{
+  font-family: "Ping", sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+  color: #004030;
+  text-align: center;
+  text-decoration: none;
+}
+.View-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 40px;
+  margin: 20px auto 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #004030;
+  font-family: 'Ping', sans-serif;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 800;
+  transition: 0.5s ease;
+}
+
+.View-more:hover {
+  cursor: pointer;
+  background-color: #0c7259;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1320px) {
+  .main .T-iraq { font-size: 2vw; }
+  .main .iraq-map { width: 18vw; }
+}
+
+@media (max-width: 1024px) {
+  .main .T-iraq {
+    width: 50vw;
+    font-size: 2.2vw;
+    top: 58%;
+  }
+  .main .iraq-map {
+    width: 20vw;
+    top: 66%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .T-iraq {
+    width: 70vw;
+    font-size: 4vw;
+    top: 55%;
+  }
+  .main .iraq-map {
+    width: 35vw;
+    top: 63%;
+  }
+
+  .intro-to-iraq {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-to-iraq img { width: 80%; }
+
+  .intro-to-iraq .p-iraq h2 { font-size: 28px; }
+  .intro-to-iraq .p-iraq p { font-size: 20px; }
+}
+
+@media (max-width: 480px) {
+  .main .T-iraq {
+    width: 90vw;
+    font-size: 5vw;
+    top: 50%;
+  }
+  .main .iraq-map {
+    width: 50vw;
+    top: 58%;
+  }
+
+  .intro-to-iraq .p-iraq h2 { font-size: 24px; }
+  .intro-to-iraq .p-iraq p { font-size: 20px; }
+}

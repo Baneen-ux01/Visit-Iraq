@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'regular';
+  src: url(/Ping.Font.Tlwen.com/PingAR+LT-Regular.otf);
+}
+.main{
+  display: flex;
+  width: 1440px;
+  height: 700px;
+  background-color: #004030;
+  gap: 100px;
+}
+.main img{
+  width: 600px;
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.main .def-food, .def-figure{
+  width: 388px;
+  margin-top: 150px;
+  color: #DCA97B;
+}
+.main .def-food h1, .def-figure h1{
+  font-weight: 800px;
+  font-size: 64px;
+  line-height: 100%;
+}
+.main .def-food p, .def-figure p{
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 60px;
+
+}
+.main-image img{
+  width: 1440px;
+  height: 730px;
+  filter: brightness(65%);
+}
+.main-image h2{
+  position: absolute;
+  left: 150px;
+  top: 228px;
+  font-weight: 800;
+  font-size: 64px;
+  font-family: "Ping", sans-serif;
+  color: #FFFFFF;
+}
+.main-image p{
+  position: absolute;
+  left: 150px;
+  top: 460px;
+  font-weight: 800;
+  font-size: 25px;
+  font-family: "Ping", sans-serif;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 3px 12px 2px 40px; 
+}
+.main-image #location{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 13px;
+  top: 7px;
+  filter: brightness(0) invert(1);
+} 
+article{
+  display: flex;
+  height: 910px;
+  gap: 30px;
+
+}
+.about{
+  display: inline-block;
+  width: 620px;
+  margin-top: 20px;
+  margin-left: 55px;
+  color: #004030;
+}
+.about h2{
+  display: inline;
+  width: 193px;
+  height: 51px;
+  font-family: "Ping", sans-serif;
+  font-size: 32px;
+}
+.about p{
+  font-family: "thin", sans-serif;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 400px;
+  letter-spacing: 0.3px;
+  width: 600px;
+  font-weight: 100px;
+  height: 400px;
+  color: #004030;
+}
+
+.work{
+  display: inline-block;
+  width: 620px;
+  margin-top: 20px;
+  margin-left: 55px;
+  color: #004030;
+}
+.work h2{
+  display: inline;
+  width: 393px;
+  height: 51px;
+  font-family: "Ping", sans-serif;
+  font-size: 32px;
+}
+.work p{
+  font-family: "thin", sans-serif;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: 400px;
+  letter-spacing: 0.3px;
+  width: 600px;
+  font-weight: 100px;
+  color: #004030;
+}
+.some-image{
+  display: flex;
+  height: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  gap: 20px;
+  margin-bottom: 60px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.some-image img{
+  width: 300px;
+  height: 400px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  box-shadow: 0 0 8px rgba(16, 64, 52, 0.6),
+              0 0 16px rgba(0, 64, 48, 0.5),
+              0 0 24px rgba(16, 222, 170, 0.4),
+              0 0 20px rgba(0, 64, 48, 0.3);
+}
+
+

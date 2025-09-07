@@ -1,0 +1,184 @@
+.main{
+  margin-top: 60px;
+  margin-left: 45px;
+  margin-bottom: 60px;
+}
+
+/* Grid and Scroll for Sections */
+.main .place-image,
+.Figures,
+.Dishes-image {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Links styling */
+.place-image a,
+.Figures a,
+.Dishes-image a {
+  display: flex;
+  flex-direction: column; 
+  text-decoration: none;
+  color: #004030;
+  align-items: center;
+  position: relative;
+}
+
+/* Images Styling */
+.place-image img {
+  width: 220px;
+  height: 320px;
+  border-radius: 25px;
+  border: 3px solid #DCA97B;
+  padding: 2.5px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Figures img {
+  width: 160px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid #DCA97B;
+  padding: 2.5px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Dishes-image img {
+  width: 220px;
+  height: 240px;
+  border-radius: 25px;
+  border: 3px solid #DCA97B;
+  padding: 2.5px;
+  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Text on Image */
+.text-on-image {
+  position: absolute;
+  top: 25px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  padding: 0 7px;
+  border: 2px solid #004030;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Ping", sans-serif;
+}
+
+.text-on-image .location {
+  width: 15px;
+  height: 15px;
+  border: none;
+  filter: brightness(0) saturate(100%) invert(21%) sepia(6%) saturate(2931%)
+          hue-rotate(116deg) brightness(95%) contrast(104%);
+}
+
+/* Hover Effects */
+.place-image img:hover,
+.Figures img:hover,
+.Dishes-image img:hover {
+  border-color: #004030;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
+  transform: scale(1.03);
+}
+
+.place-image a:hover .text-on-image {
+  border-color: #004030;
+  box-shadow: 0 0 8px #004030,
+              0 0 8px #004030,
+              0 0 15px #004030,
+              0 0 18px #004030;
+}
+
+.place-image a:hover .location {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(80%) saturate(5000%) hue-rotate(355deg) brightness(70%) contrast(100%);
+}
+
+.place-image a:hover p,
+.Figures a:hover p,
+.Dishes-image a:hover p {
+  color: rgb(242, 57, 57);
+  transform: scale(1.03);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .place-image img { width: 180px; height: 260px; }
+  .Figures img { width: 140px; height: 150px; }
+  .Dishes-image img { width: 180px; height: 200px; }
+}
+@media (max-width: 1110px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .place-image img { width: 160px; height: 240px; }
+  .Figures img { width: 130px; height: 130px; }
+  .Dishes-image img { width: 160px; height: 199px; }
+}
+@media (max-width: 1285px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+  }
+
+  .place-image img { width: 170px; height: 250px; }
+  .Figures img { width: 140px; height: 140px; }
+  .Dishes-image img { width: 170px; height: 200px; }
+}
+@media (max-width: 1080px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .place-image img { width: 160px; height: 240px; }
+  .Figures img { width: 130px; height: 130px; }
+  .Dishes-image img { width: 160px; height: 199px; }
+}
+
+@media (max-width: 768px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 25px;
+  }
+
+  .place-image img { width: 140px; height: 220px; }
+  .Figures img { width: 110px; height: 120px; }
+  .Dishes-image img { width: 140px; height: 160px; }
+}
+
+@media (max-width: 480px) {
+  .main .place-image,
+  .Figures,
+  .Dishes-image {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+
+  .place-image img { width: 120px; height: 180px; }
+  .Figures img { width: 90px; height: 100px; }
+  .Dishes-image img { width: 120px; height: 140px; }
+}
