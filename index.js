@@ -18,18 +18,10 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Transelate
-
-// ----------------------
-// مسار ملف الترجمة
-// ----------------------
 function getTranslationPath() {
-  return "../../arabic.json"; // عدّل حسب موقع ملفاتك
+  return "../../arabic.json"; 
 }
 
-// ----------------------
-// دالة الترجمة
-// ----------------------
 function translate(lang) {
   const pageId = document.body.dataset.page; 
   const jsonPath = getTranslationPath();

@@ -32,52 +32,47 @@ html, body {
   object-fit: cover;
 }
 
-.main .T-iraq {
+.main .T-iraq svg {
+  width: 55vw;
+  height: 10vw;
   position: absolute;
-  width: 40vw;
-  max-width: 800px;
-  height: auto;
-  left: 42%;
-  top: 39.5%;
-  transform: translateX(-50%);
+  left: 49%;
+  top: 42%;
+  transform: translate(-50%, -50%);
   text-align: center;
   color: #004030;
-  font-size: 2.2vw;
   font-weight: 800;
 }
 
-.main .iraq-map {
+.main .T-iraq .iraq-map svg {
   position: absolute;
   width: 20vw;
   max-width: 200px;
-  height: auto;
-  left: 50%;
+  left: 49.3%;
   top: 38%;
   transform: translateX(-50%);
 }
 
 .intro-to-iraq {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-width: 100%;
-  background-color: #004030;
+  flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  padding: 80px 20px;
-  gap: 40px;
+  align-items: center;
+  width: 100%;
+  background-color: #004030;
+  padding: 80px 40px;
+  gap: 60px;
 }
 
 .intro-to-iraq img {
   width: 450px;
-  max-width: 90%;
   height: auto;
   flex-shrink: 0;
 }
 
 .intro-to-iraq .p-iraq {
   color: #DCA97B;
-  max-width: 740px;
+  max-width: 500px;
 }
 
 .intro-to-iraq .p-iraq h2 {
@@ -101,7 +96,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-.Figures-section .Figures{
+.Figures-section .Figures {
   margin-left: 50px;
 }
 
@@ -115,9 +110,15 @@ html, body {
   transition: border-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-.place-section .place-image img { width: 250px; height: 350px; }
-.Figures-section .Figures img { width: 183px; height: 190px; border-radius: 50%; }
-.food-section .Dishes-image img { width: 250px; height: 298px; }
+.place-section .place-image img {
+  width: 250px; height: 350px;
+}
+.Figures-section .Figures img {
+  width: 183px; height: 190px; border-radius: 50%;
+}
+.food-section .Dishes-image img {
+  width: 250px; height: 298px;
+}
 
 .place-section img:hover,
 .Figures-section img:hover,
@@ -130,15 +131,16 @@ html, body {
 section h2 {
   text-align: center;
   font-weight: 800;
-  font-size: 46px;
+  font-size: 42px;
   color: #004030;
-  margin-top: 40px;
+  margin-top: 30px;
 }
-h2{
+
+h2 {
   font-weight: 800;
-  font-size: 76px;
+  font-size: 60px;
   color: #DCA97B;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 hr {
@@ -149,7 +151,8 @@ hr {
   background-color: #DCA97B;
   border-radius: 25px;
 }
-section a{
+
+section a {
   font-family: "Ping", sans-serif;
   font-weight: 200;
   font-size: 19px;
@@ -157,6 +160,7 @@ section a{
   text-align: center;
   text-decoration: none;
 }
+
 .View-more {
   display: flex;
   justify-content: center;
@@ -180,56 +184,106 @@ section a{
   box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 1320px) {
-  .main .T-iraq { font-size: 2vw; }
-  .main .iraq-map { width: 18vw; }
-}
-
-@media (max-width: 1024px) {
-  .main .T-iraq {
-    width: 50vw;
-    font-size: 2.2vw;
-    top: 58%;
-  }
-  .main .iraq-map {
-    width: 20vw;
-    top: 66%;
-  }
-}
-
-@media (max-width: 768px) {
-  .main .T-iraq {
-    width: 70vw;
-    font-size: 4vw;
-    top: 55%;
-  }
-  .main .iraq-map {
-    width: 35vw;
-    top: 63%;
-  }
-
-  .intro-to-iraq {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .intro-to-iraq img { width: 80%; }
-
-  .intro-to-iraq .p-iraq h2 { font-size: 28px; }
-  .intro-to-iraq .p-iraq p { font-size: 20px; }
-}
 
 @media (max-width: 480px) {
-  .main .T-iraq {
-    width: 90vw;
-    font-size: 5vw;
-    top: 50%;
+  .main-image {
+    height: 400px;
   }
-  .main .iraq-map {
-    width: 50vw;
-    top: 58%;
+  .main .T-iraq svg {
+    width: 80vw; height: 15vw; top: 22.4%;
   }
+  .main .T-iraq .iraq-map svg {
+    width: 50vw; max-width: none; top: 20.9%;
+  }
+  .intro-to-iraq {
+    flex-direction: column; padding: 40px 15px; gap: 30px;
+  }
+  .intro-to-iraq img {
+    width: 90%;
+  }
+  .intro-to-iraq .p-iraq {
+    max-width: 90%;
+  }
+  .intro-to-iraq .p-iraq h2 {
+    font-size: 28px;
+  }
+  .intro-to-iraq .p-iraq p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  section h2 {
+    font-size: 28px;
+  }
+  .place-section .place-image img,
+  .food-section .Dishes-image img {
+    width: 180px; height: 250px;
+  }
+  .Figures-section .Figures img {
+    width: 130px; height: 140px;
+  }
+}
 
-  .intro-to-iraq .p-iraq h2 { font-size: 24px; }
-  .intro-to-iraq .p-iraq p { font-size: 20px; }
+@media (max-width: 768px) and (min-width: 481px) {
+  .main-image {
+    height: 500px;
+  }
+  .main .T-iraq svg {
+    width: 70vw; height: 12vw; top: 38%;
+  }
+  .main .T-iraq .iraq-map svg {
+    width: 35vw; top: 33%;
+  }
+  .intro-to-iraq {
+    flex-direction: row; padding: 60px 20px; gap: 40px;
+  }
+  .intro-to-iraq img {
+    width: 60%;
+  }
+  .intro-to-iraq .p-iraq {
+    max-width: 60%;
+  }
+  .intro-to-iraq .p-iraq h2 {
+    font-size: 32px;
+  }
+  .intro-to-iraq .p-iraq p {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  section h2 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-image{
+    height: 700px;
+  }
+  .main .T-iraq svg {
+    width: 55vw; height: 10vw; top: 42%;
+  }
+  .main .T-iraq .iraq-map svg {
+    width: 20vw; max-width: 200px; top: 38%;
+  }
+  .intro-to-iraq {
+    flex-direction: row; padding: 80px 40px; gap: 60px;
+  }
+  .intro-to-iraq img {
+    width: 450px;
+  }
+  .intro-to-iraq .p-iraq h2 {
+    font-size: 36px;
+  }
+  .intro-to-iraq .p-iraq p {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  section h2 {
+    font-size: 42px;
+  }
 }
