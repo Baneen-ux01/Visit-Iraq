@@ -2,6 +2,10 @@
   font-family: 'Ping';
   src: url(/Ping.Font.Tlwen.com/PingAR+LT-Bold.otf);
 }
+@font-face {
+  font-family: 'regular';
+  src: url(/Ping.Font.Tlwen.com/PingAR+LT-Regular.otf);
+}
 
 html, body {
   margin: 0;
@@ -82,22 +86,25 @@ html, body {
 }
 
 .intro-to-iraq .p-iraq p {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1.6;
+  font-weight: 400;
+  text-align: justify;
+  font-family: 'regular', sans-serif;
 }
 
 .place-section .place-image,
 .Figures-section .Figures,
 .food-section .Dishes-image {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   overflow-x: auto;
   padding: 30px;
   scroll-behavior: smooth;
 }
 
 .Figures-section .Figures {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .place-section .place-image img,
@@ -196,7 +203,7 @@ section a {
     width: 50vw; max-width: none; top: 20.9%;
   }
   .intro-to-iraq {
-    flex-direction: column; padding: 40px 15px; gap: 30px;
+    flex-direction: column; padding: 40px 0px; gap: 30px;
   }
   .intro-to-iraq img {
     width: 90%;
@@ -222,6 +229,7 @@ section a {
   }
   .Figures-section .Figures img {
     width: 130px; height: 140px;
+    padding-left: 5px;
   }
 }
 
