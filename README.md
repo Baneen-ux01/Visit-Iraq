@@ -15,12 +15,6 @@ The project uses HTML, CSS, and JavaScript. JavaScript is used for page navigati
 * Reusable header and footer
 * Page navigation
 
-## Technologies
-
-* HTML
-* CSS
-* JavaScript
-
 ## How to Run
 
 Just open `index.html` in any web browser, or use the Live Server extension in VS Code.
