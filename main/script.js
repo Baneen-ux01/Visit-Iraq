@@ -29,14 +29,3 @@ window.addEventListener("DOMContentLoaded", () => {
   loadPart("footer", prefix + "main/footer.html");
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   fetch("../main/header.html")
-//     .then(res => res.text())
-//     .then(data => {
-//       const headerContainer = document.createElement("div");
-//       headerContainer.id = "header-container";
-//       headerContainer.innerHTML = data;
-//       document.body.prepend(headerContainer);
-//     })
-//     .catch(err => console.error(err));
-// });
