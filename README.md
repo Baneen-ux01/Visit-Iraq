@@ -21,17 +21,6 @@ The project uses HTML, CSS, and JavaScript. JavaScript is used for page navigati
 * CSS
 * JavaScript
 
-## Project Structure
-
-```text
-Visit-Iraq/
-├── main/
-│   ├── header.html
-│   └── footer.html
-├── index.html
-└── index.js
-```
-
 ## How to Run
 
 Just open `index.html` in any web browser, or use the Live Server extension in VS Code.
